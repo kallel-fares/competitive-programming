@@ -763,8 +763,17 @@ My accepted solutions on Codeforces.
 
 Problem statements are the property of Codeforces and their authors and are deliberately **not** reproduced here. Each solution links to its original problem and submission. Only the code in `solutions/` is mine.
 
-## How this was built
+## Export your own solutions
 
-- `scripts/fetch_metadata.py` — problem metadata from the public Codeforces API
-- `scripts/export-solutions.user.js` — userscript that exports my own submission sources from my own logged-in browser session
-- `scripts/build_repo.py` — assembles the tree and the backdated history
+Codeforces has no API for submission source code, no bulk export, and its pages sit behind Cloudflare — so there is no straightforward way to get your own solutions back out. [`scripts/export-solutions.user.js`](scripts/export-solutions.user.js) does it.
+
+It runs in your own logged-in browser, against your own submissions. No credentials, no access tokens, no third-party service: the only thing it produces is a JSON file on your machine.
+
+1. Edit `HANDLE` at the top of the script to your handle
+2. Log in to Codeforces and open any page on the site
+3. Open the browser console (`Cmd+Option+J` / `Ctrl+Shift+J`) and paste the script
+4. Click **Start** in the panel that appears
+
+It fetches the earliest accepted submission for each problem you have solved, paces itself, and backs off automatically when Codeforces rate-limits you. Progress is saved after every submission, so you can close the tab and pick up where you left off — paste it again and press Start. When it finishes you get `<handle>-solutions.json`, a map of submission id to source.
+
+Works with a userscript manager too, if you prefer — the metadata block is already there.
