@@ -4,24 +4,6 @@ My accepted solutions on Codeforces, one file per problem. Every commit is dated
 
 **Handle:** [dicfore](https://codeforces.com/profile/dicfore) &nbsp;·&nbsp; **Problems solved:** 725 &nbsp;·&nbsp; **Span:** Apr 2019 – Jul 2026
 
-## By difficulty
-
-| Rating | Solved |
-| --- | --- |
-| 800 | 193 |
-| 900 | 58 |
-| 1000 | 51 |
-| 1100 | 56 |
-| 1200 | 122 |
-| 1300 | 68 |
-| 1400 | 62 |
-| 1500 | 43 |
-| 1600 | 13 |
-| 1700 | 8 |
-| 1800 | 4 |
-| 2000 | 1 |
-| unrated | 46 |
-
 ## By year
 
 | Year | Solved |
