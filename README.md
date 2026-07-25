@@ -1,6 +1,6 @@
 # Codeforces solutions
 
-My accepted solutions on Codeforces, one file per problem. Every commit is dated to the moment the problem was actually solved, so the history is a record of practice rather than of uploading.
+My accepted solutions on Codeforces.
 
 **Handle:** [dicfore](https://codeforces.com/profile/dicfore) &nbsp;·&nbsp; **Problems solved:** 725 &nbsp;·&nbsp; **Span:** Apr 2019 – Jul 2026
 
